@@ -21,7 +21,7 @@ Read through the instructions and use as you please.
 # Troubleshooting
 You might have to tweak the requirements.txt file to install the **igramscraper** dependency.
 While I'm writing this, the pip package is broken, so I had to build it myself, if you are fortunate however `pip install igramscraper` might just work for you.
+If that's the case then cool, just remove all the dependencies in the requirements.txt file under the comment `igramscraper==0.3.5 dependencies` and instead add a line with `igramscraper` and redo the  `pip install -r requirements.txt` command. Everything should work right away.  
 
-I've decided to comment out my fix in the requirements.txt file, so if you're reading this then probably the pip package is still broken and all you have to do to fix your problem is commenting out the line in requirements.txt containing `igramscraper` and uncommenting the last line containing `.\igramscrapersrc\`
-
-If even this doesn't work for you, then I probably messed something up with the src folder of igramscraper (sry) the only way for you to fix this is by downloading the whl file of igramscraper from the internet and building it yourself. Good luck.  
+I decided to let the dependencies for building the package in the requirements.txt so it should build it for you and it should all work as expected.
+If that's not the case however, all you have to do is build it from source yourself. Search the internet for the `.whl` file and install it in the python virtual environment. Good Luck.  
